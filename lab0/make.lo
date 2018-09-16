@@ -1,0 +1,17 @@
+In file included from lab0_ex4.c:3:
+In file included from ./list.h:6:
+./defs.h:30:17: error: typedef redefinition with different types ('int32_t' (aka 'int') vs '__darwin_intptr_t' (aka 'long'))
+typedef int32_t intptr_t;
+                ^
+/usr/include/sys/_types/_intptr_t.h:32:27: note: previous definition is here
+typedef __darwin_intptr_t       intptr_t;
+                                ^
+In file included from lab0_ex4.c:3:
+In file included from ./list.h:6:
+./defs.h:31:18: error: typedef redefinition with different types ('uint32_t' (aka 'unsigned int') vs 'unsigned long')
+typedef uint32_t uintptr_t;
+                 ^
+/usr/include/sys/_types/_uintptr_t.h:30:24: note: previous definition is here
+typedef unsigned long           uintptr_t;
+                                ^
+2 errors generated.
